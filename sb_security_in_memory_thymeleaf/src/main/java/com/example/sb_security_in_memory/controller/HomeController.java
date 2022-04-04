@@ -20,8 +20,23 @@ public class HomeController {
 		return "Adminpage";
 	}
 
+	@GetMapping("/teacher")
+	public String showTeacher() {
+		return "Teacherpage";
+	}
+
+	@GetMapping("/management")
+	public String showManagement() {
+		return "Managementpage";
+	}
+
 	@GetMapping("/emp")
 	public String showEmp() {
 		return "Emppage";
+	}
+
+	@GetMapping("/denied")
+	public String showDenied() {
+		return "Deniedpage";
 	}
 }
