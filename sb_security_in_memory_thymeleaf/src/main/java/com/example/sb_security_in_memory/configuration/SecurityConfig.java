@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				/* Logout details */
 				.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
 
-		/* Exception details */
-		.and()
+				/* Exception details */
+				.and().exceptionHandling().accessDeniedPage("/denied");
 	}
 }
