@@ -14,4 +14,14 @@ public class HomeController {
 	public String showWelcome() {
 		return "Welcomepage";
 	}
+
+	@GetMapping("/admin")
+	public String showAdmin() {
+		return "Adminpage";
+	}
+
+	@GetMapping("/emp")
+	public String showEmp() {
+		return "Emppage";
+	}
 }
